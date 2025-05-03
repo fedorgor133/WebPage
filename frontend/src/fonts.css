@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter/Inter-Variable.woff2') format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter/Inter-Italic-Variable.woff2') format('woff2');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Plus_Jakarta_Sans';
+  src: url('./assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Variable.woff2')
+    format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Plus_Jakarta_Sans';
+  src: url('./assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic-Variable.woff2')
+    format('woff2');
+  font-style: italic;
+}

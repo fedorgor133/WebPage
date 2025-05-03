@@ -1,0 +1,11 @@
+[
+  { "id": 1, "name": "Wi-Fi" },
+  { "id": 2, "name": "Swimming Pool" },
+  { "id": 3, "name": "Gym" },
+  { "id": 4, "name": "Laundry" },
+  { "id": 5, "name": "Parking" },
+  { "id": 6, "name": "Air Conditioning" },
+  { "id": 7, "name": "Balcony" },
+  { "id": 8, "name": "Pet Friendly" },
+  { "id": 9, "name": "Bicycle" }
+]

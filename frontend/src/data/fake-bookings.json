@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "room_id": 1,
+    "guest_id": 1,
+    "start_date": "2024-03-11T02:55:14Z",
+    "end_date": "2024-05-15T12:08:29Z",
+    "status": "completed",
+    "total_price": 100,
+    "created_at": "2024-03-11T02:55:14Z",
+    "updated_at": "2024-05-15T12:08:29Z"
+  }
+]
