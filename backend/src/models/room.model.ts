@@ -1,6 +1,6 @@
 import { and, eq } from 'drizzle-orm';
-import db from '../db/connection';
-import { rooms } from '../db/schema';
+import db from '../db/connection.js';
+import { rooms } from '../db/schema.js';
 
 type GetAllRoomsParams = {
   withPhotos?: boolean;

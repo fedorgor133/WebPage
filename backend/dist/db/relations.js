@@ -1,5 +1,5 @@
-import { relations } from "drizzle-orm/relations.js";
-import { users, rooms, roomPhotos, bookings, reviews, payments, amenities, propertyAmenities } from "./schema";
+import { relations } from "drizzle-orm/relations";
+import { users, rooms, roomPhotos, bookings, reviews, payments, amenities, propertyAmenities } from "./schema.js";
 export const roomsRelations = relations(rooms, ({ one, many }) => ({
     user: one(users, {
         fields: [rooms.hostId],

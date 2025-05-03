@@ -1,5 +1,5 @@
-import sendEmail from '../config/email-config';
-import { User } from '../config/types';
+import sendEmail from '../config/email-config.js';
+import { User } from '../config/types.js';
 
 async function welcomeEmail(user: User) {
   const subject = 'Welcome 🤘!';

@@ -5,10 +5,10 @@ import express, { NextFunction, Request, Response } from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
 
-import HttpError from './models/HttpError';
-import errorHandler from './middlewares/errorHandler';
-import roomsRouter from './routes/rooms.routes';
-import userRouter from './routes/user.routes';
+import HttpError from './models/HttpError.js';
+import errorHandler from './middlewares/errorHandler.js';
+import roomsRouter from './routes/rooms.routes.js';
+import userRouter from './routes/user.routes.js';
 import cookieParser from 'cookie-parser';
 
 const app = express();

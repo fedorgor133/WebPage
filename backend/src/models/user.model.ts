@@ -1,7 +1,7 @@
 import { eq } from 'drizzle-orm';
-import { User } from '../config/types';
-import db from '../db/connection';
-import { users } from '../db/schema';
+import { User } from '../config/types.js';
+import db from '../db/connection.js';
+import { users } from '../db/schema.js';
 
 async function addOneUser(newUser: User) {
   const [user] = await db

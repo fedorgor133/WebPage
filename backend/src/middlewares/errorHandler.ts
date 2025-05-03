@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
-import HttpError from '../models/HttpError';
-import ValidationError from '../models/ValidationError';
+import HttpError from '../models/HttpError.js';
+import ValidationError from '../models/ValidationError.js';
 
 //! ES OBLIGATORIO QUE USÉIS LOS 4 PARÁMETROS, si no no reconocerá que es el middleware de los errores
 function errorHandler(
