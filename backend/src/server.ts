@@ -4,12 +4,13 @@ import 'express-async-errors';
 import express, { NextFunction, Request, Response } from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
+import cookieParser from 'cookie-parser';
+
 
 import HttpError from './models/HttpError.js';
 import errorHandler from './middlewares/errorHandler.js';
 import roomsRouter from './routes/rooms.routes.js';
 import userRouter from './routes/user.routes.js';
-import cookieParser from 'cookie-parser';
 
 const app = express();
 
@@ -21,7 +22,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: process.env.FRONTEND_BASE_URL,
+    origin: process.env.FRONTEND_BASE_URL || 'http://localhost:5173',
     credentials: true,
   })
 );

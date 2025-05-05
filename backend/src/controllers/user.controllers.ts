@@ -2,12 +2,12 @@ import { Request, Response } from 'express';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
-import { LoginSchema, SignupSchema } from '../schemas/userSchemas';
-import ValidationError from '../models/ValidationError';
-import userModel from '../models/user.model';
-import { welcomeEmail } from '../emails/welcomeEmail';
-import HttpError from '../models/HttpError';
-import { ExtendedRequest } from '../config/types';
+import { LoginSchema, SignupSchema } from '../schemas/userSchemas.js';
+import ValidationError from '../models/ValidationError.js';
+import userModel from '../models/user.model.js';
+import { welcomeEmail } from '../emails/welcomeEmail.js';
+import HttpError from '../models/HttpError.js';
+import { ExtendedRequest } from '../config/types.js';
 
 async function signup(req: Request, res: Response) {
   const user = req.body;

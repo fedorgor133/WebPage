@@ -28,8 +28,8 @@ function LoginForm() {
 
         toast.success(`User ${resp.data.name} logged successfully`);
       })
-      .catch((err: AxiosError) => {
-        toast.error(err.response?.data?.message);
+      .catch((err: AxiosError<{ message?: string }>) => {
+        toast.error(err.response?.data?.message || 'An unexpected error occurred');
         console.log(err.response?.data);
       });
   }

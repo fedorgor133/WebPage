@@ -2,6 +2,18 @@ import { Request, Response } from 'express';
 import roomModel from '../models/room.model.js';
 
 async function getAllRooms(req: Request, res: Response) {
+  try {
+    const queryParams = req.query;
+    const rooms = await roomModel.getAll(queryParams);
+    res.send(rooms);
+  } catch (error) {
+    console.error('Error in getAllRooms:', error);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+}
+
+/*
+async function getAllRooms(req: Request, res: Response) {
   const queryParams = req.query;
 
   const rooms = await roomModel.getAll(queryParams);
@@ -16,6 +28,7 @@ async function getAllRooms(req: Request, res: Response) {
 
   res.send(rooms);
 }
+*/
 
 function getOneRoom(req: Request, res: Response) {
   res.send('una room');
